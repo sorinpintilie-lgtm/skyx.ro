@@ -4,24 +4,24 @@ import DroneItem from './DroneItem';
 
 const drones = [
   {
+    name: 'DJI M30T',
+    image: '/M30T-RTK-2_1024x1024.png',
+    description: 'Dronă industrială cu camere termice și zoom. Ideală pentru inspecții, căutare și salvare, și operațiuni de noapte.',
+    specs: ['Cameră termică 640×512', 'Zoom optic 200x', 'Rezistență IP55', 'Funcționare -20°C to 50°C'],
+    side: 'right' as const,
+  },
+  {
     name: 'DJI M300 RTK',
     image: '/m300-rtk_r1.600x600.png',
     description: 'Dronă profesională cu poziționare RTK pentru precizie la nivel de centimetru. Perfectă pentru topografie, cartografiere și inspecții.',
     specs: ['Autonomie de 55 minute', 'Rază de transmisie 15km', 'Rezistență IP45', 'Capabilități AI avansate'],
-    side: 'right' as const,
+    side: 'left' as const,
   },
   {
     name: 'DJI Mini 3',
     image: '/DJI-Mini-3-(8)-min.png',
     description: 'Dronă compactă și ușoară, perfectă pentru fotografie aeriană și videografie. Portabilă și ușor de utilizat.',
     specs: ['Greutate sub 249g', 'Cameră 4K HDR', 'Autonomie 38 minute', 'Rezistență la vânt nivel 5'],
-    side: 'left' as const,
-  },
-  {
-    name: 'DJI M30T',
-    image: '/M30T-RTK-2_1024x1024.png',
-    description: 'Dronă industrială cu camere termice și zoom. Ideală pentru inspecții, căutare și salvare, și operațiuni de noapte.',
-    specs: ['Cameră termică 640×512', 'Zoom optic 200x', 'Rezistență IP55', 'Funcționare -20°C to 50°C'],
     side: 'right' as const,
   },
 ];
