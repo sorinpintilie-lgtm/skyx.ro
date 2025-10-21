@@ -68,7 +68,7 @@ export default function DroneItem({ name, image, description, specs, side, index
 
   return (
     <div ref={ref} className={isMobile ? "relative min-h-screen py-10 overflow-hidden" : "relative h-[200vh]"}>
-      <div className={isMobile ? "sticky top-1/2 -translate-y-1/2 w-full max-w-2xl mx-auto px-4" : "sticky top-1/2 -translate-y-1/2 w-full max-w-6xl mx-auto px-4"}>
+      <div className={isMobile ? "relative w-full max-w-2xl mx-auto px-4" : "sticky top-1/2 -translate-y-1/2 w-full max-w-6xl mx-auto px-4"}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {!isMobile && (
             <motion.div style={{ x: droneX, y: droneY, rotate: droneRotate, scale: droneScale, opacity: droneOpacity }} className={`relative ${side === 'left' ? 'md:order-2' : 'md:order-1'} flex justify-center`}>
