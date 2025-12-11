@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "rm -rf node_modules .next && npm install && npm run build"
   publish = "out"
 
 [[plugins]]
@@ -7,3 +7,4 @@
   
 [build.environment]
   NODE_VERSION = "20.9.0"
+  NPM_FLAGS = "--legacy-peer-deps"
