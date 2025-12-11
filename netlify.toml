@@ -2,5 +2,8 @@
   command = "npm run build"
   publish = "out"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  
 [build.environment]
-  NETLIFY_FORCE_IGNORE_PLUGIN = "@netlify/plugin-nextjs"
+  NODE_VERSION = "20.9.0"
